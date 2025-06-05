@@ -18,7 +18,7 @@ public class DatabaseConnection {
             throw new SQLException("No se encontró el driver de MySQL", e);
         }
     }
-
+    // Método principal para probar la conexión
     public static void main(String[] args) {
         try (Connection connection = getConnection()) {
             System.out.println("¡Conexión exitosa a la base de datos!");
